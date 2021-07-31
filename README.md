@@ -22,4 +22,5 @@ The objective of the predictive model is to build a model to predict whether a f
 https://www.kaggle.com/usdot/flight-delays
 
 **Web App:**
+
 The .py file contains code for the web app Flight Delay Prediction. For that we have used streamlit which is open-source python library.
