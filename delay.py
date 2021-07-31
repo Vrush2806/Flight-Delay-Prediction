@@ -88,10 +88,10 @@ def main():
                 text1= "Flight is not delayed. It will depart for next flight at scheduled time"
                 st.write(text1)
             elif(res>= -15):
-                text2= "Flight is only delayed by "+str(abs(res))+". Delays upto 15 minutes are considered as not delay.\n FLIGHT IS NOT DELAYED"
+                text2= "Flight is only delayed by "+str(abs(res))+". Delays upto 15 minutes are considered as not delay. FLIGHT IS NOT DELAYED"
                 st.write(text2)
             else:
-                text3= "Flight is delayed by "+str(res)+". Delays by more than 15 minutes are considered to be actual delays.\n FLIGHT IS DELAY"
+                text3= "Flight is delayed by "+str(res)+". Delays by more than 15 minutes are considered to be actual delays. FLIGHT IS DELAY"
                 st.write(text3)
 
 
