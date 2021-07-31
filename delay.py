@@ -5,8 +5,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 
 def loadData():
-    flights = pd.read_csv('/home/vaishali/projects/python_proj/Flight/flights.csv',low_memory=False)
-    airport = pd.read_csv('/home/vaishali/projects/python_proj/Flight/airports.csv',low_memory=False)
+    flights = pd.read_csv('/home/vaishali/projects/python_proj/Flight/flights.csv')
+    airport = pd.read_csv('/home/vaishali/projects/python_proj/Flight/airports.csv')
 
     variables_to_remove=["YEAR","FLIGHT_NUMBER","TAIL_NUMBER","DEPARTURE_TIME","TAXI_OUT","WHEELS_OFF","ELAPSED_TIME","AIR_TIME","WHEELS_ON","TAXI_IN","ARRIVAL_TIME","DIVERTED","CANCELLED","CANCELLATION_REASON","AIR_SYSTEM_DELAY", "SECURITY_DELAY","AIRLINE_DELAY","LATE_AIRCRAFT_DELAY","WEATHER_DELAY","SCHEDULED_TIME","SCHEDULED_ARRIVAL"]
     flights.drop(variables_to_remove,axis=1,inplace= True)
